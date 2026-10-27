@@ -12,7 +12,7 @@
 | `favicon.svg` | 남색 배경을 깐 로고 — 파비콘용 |
 | `og.png` | 링크 공유 미리보기 이미지 (1200×630) |
 | `img/` | 포트폴리오 스크린샷 (가로 560px JPG) |
-| `CNAME` | GitHub Pages 커스텀 도메인 `midnightmochi.com` — DNS가 GitHub를 가리킨 뒤에 추가한다 (먼저 넣으면 github.io 주소도 그 도메인으로 넘어가 접속이 끊긴다) |
+| `CNAME` | GitHub Pages 커스텀 도메인 `midnight-mochi.com` (DNS: AWS Route 53, 계정 프로필 `kcal-personal`) |
 
 ## 실행·배포
 
