@@ -18,6 +18,7 @@
 
 - 미리보기: `open index.html` (또는 `python3 -m http.server` 후 http://localhost:8000)
 - 배포: GitHub Pages — `main` 에 push 하면 1~2분 뒤 반영된다. 별도 빌드 없음.
+- 구글 검색: Search Console 도메인 속성 `midnight-mochi.com` (개인 구글 계정, 2026-10-29 등록·첫 화면 색인 요청). 소유권 확인은 Route 53 apex TXT `google-site-verification=…` — 지우면 확인이 풀린다.
 
 ## 포트폴리오·연혁 추가
 
