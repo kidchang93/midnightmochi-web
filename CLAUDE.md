@@ -9,7 +9,7 @@
 |------|------|
 | `index.html` | 페이지 전체 (CSS·JS 인라인). 디자인 토큰은 `:root` 에 있다 |
 | `logo.svg` | 로고 마크 (투명 배경, 달을 올려다보는 찹쌀떡) |
-| `favicon.svg` | 남색 배경을 깐 로고 — 파비콘용 |
+| `favicon.svg` | 회사 로고(달이 뜬 찹쌀떡)를 남색 둥근 사각형에 올린 파비콘 — `logo.svg` 와 다른 그림 |
 | `og.png` | 링크 공유 미리보기 이미지 (1200×630) |
 | `img/` | 포트폴리오 스크린샷 (가로 560px JPG) |
 | `CNAME` | GitHub Pages 커스텀 도메인 `midnight-mochi.com` (DNS: AWS Route 53, 계정 프로필 `kcal-personal`) |
