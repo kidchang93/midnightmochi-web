@@ -7,10 +7,10 @@
 ```
 midnightmochi-web/
 ├── index.html      페이지 전체: <head> 메타 + 인라인 <style> + 본문 + 인라인 <script>
-├── logo.svg        페이지 안 일러스트(달을 올려다보는 찹쌀떡) — 투명 배경
+├── logo.svg        회사 로고 어두운 바탕용(크림 떡 + 금색 초승달) — 투명 배경, 512 정사각 틀
 ├── favicon.svg     브라우저 탭 아이콘 — 남색 둥근 사각형 위 회사 로고
 ├── og.png          링크 공유 미리보기 (1200×630)
-├── img/            포트폴리오 스크린샷 (가로 560px JPG)
+├── img/            포트폴리오 스크린샷 (가로 840px JPG)
 ├── CNAME           커스텀 도메인 midnight-mochi.com
 └── .nojekyll       GitHub Pages 의 Jekyll 처리 끄기
 ```

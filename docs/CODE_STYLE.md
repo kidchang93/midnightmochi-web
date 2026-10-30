@@ -8,7 +8,7 @@
 | 섹션은 `<section id="영문" class="wrap">` + `.sec-head` | `<section id="works" class="wrap">` |
 | 섹션 머리: 영문 이탤릭 `.kicker` + 한국어 `h2` | `<p class="kicker">Works</p><h2>만든 것들</h2>` |
 | 장식 이미지는 `alt=""`, 의미 있는 이미지는 한국어 alt | `<img src="logo.svg" alt="">`, `alt="케어테이블 진료 리포트 화면"` |
-| 이미지에 `width`·`height` 명시, 스크린샷은 `loading="lazy"` | `width="560" height="1213" loading="lazy"` |
+| 이미지에 `width`·`height` 명시(비율·자리 확보용), 스크린샷은 `loading="lazy"`. 실제 높이는 전역 `img { height: auto }` — 이걸 빼면 CSS 로 폭만 줄인 이미지가 세로로 늘어난다 | `width="560" height="1213" loading="lazy"` |
 | 외부 링크는 새 탭 + `rel="noopener"` | `target="_blank" rel="noopener"` |
 | 날짜는 `<time datetime>` | `<time datetime="2026-10-29">10.29</time>` |
 | 삽입 지점 주석은 한국어 | `<!-- 새 프로젝트는 이 아래, 최신순으로 추가한다 -->` |

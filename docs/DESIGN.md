@@ -24,10 +24,10 @@
 | 포트폴리오 | `<!-- 새 프로젝트는 이 아래, 최신순으로 추가한다 -->` 바로 아래 | `<article class="card work reveal">` (대표작만 `work feature`) |
 | 상태 배지 | `.tags` 안 | `status live`(운영 중) / `status wip`(진행 중) / 완료는 배지 없음 |
 | 연혁 | `<!-- 새 연혁은 해당 연도 바로 아래 … -->` 아래 해당 `<li class="year">` 다음 | `<li><time datetime="YYYY-MM-DD">MM.DD</time><p><b>…</b><span>…</span></p></li>` |
-| 스크린샷 | `img/` | `sips -s format jpeg -s formatOptions 82 --resampleWidth 560 원본.png --out img/이름.jpg` |
+| 스크린샷 | `img/` | `sips -s format jpeg -s formatOptions 85 --resampleWidth 840 원본.png --out img/이름.jpg` (케어테이블 원본: `../../kcal/marketing/appstore-screenshots/`) |
 
 ## 브랜드 자산
 
 - 회사 로고는 2026-10-30 확정한 **'달이 뜬 찹쌀떡'**(얼굴 없는 떡 실루엣 + 금색 초승달 창). 원본 SVG 는 상위 폴더 `../docs/로고/`.
 - `favicon.svg` 는 이 회사 로고를 남색 둥근 사각형 위에 올린 것이다. 크림 떡 위 금색 달은 16px 에서 대비가 약해 사라지므로, 파비콘에서만 달을 금색 대신 **창으로 뚫어**(evenodd) 남색 바탕이 비치게 했다.
-- `logo.svg`(페이지 안 얼굴 있는 찹쌀떡)는 아직 이전 일러스트다. 교체 여부는 사용자 결정 대기 — 임의로 바꾸지 않는다.
+- `logo.svg` 는 같은 로고의 어두운 바탕용(크림 떡 + 금색 달)을 512 정사각 틀에 넣은 것. 떡 아래 끝이 틀의 약 80% 라 히어로 squish 의 `transform-origin: 50% 80%` 와 맞는다. 2026-10-30 이전의 얼굴 있는 찹쌀떡 일러스트를 대체했다.

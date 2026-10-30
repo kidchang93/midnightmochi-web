@@ -22,7 +22,7 @@ python3 -m http.server 8000   # http://localhost:8000 에서 확인
 | 공개 | 상세 주소·휴대폰·계약 문서·서명이 들어가지 않았는가 |
 | 스타일 | 색은 `:root` 토큰만, 클래스 변형 패턴(`.work.feature` 식)을 따랐는가 |
 | 접근성 | 장식 이미지 `alt=""`, 의미 있는 이미지에 한국어 alt, 포커스 링 유지, reduced-motion 에서 움직임 꺼짐 |
-| 성능 | 새 스크린샷을 가로 560px JPG 로 줄였는가 |
+| 성능 | 새 스크린샷을 가로 840px JPG 로 줄였는가 (더 작으면 3배 화면에서 흐려짐) |
 | 링크 | 외부 링크 `target="_blank" rel="noopener"`, 앵커(`#works` 등)가 실제 id 와 맞는가 |
 | 문서 | 파일·구조가 바뀌면 `CLAUDE.md` 파일 표와 `docs/` 를 같이 고쳤는가 |
 

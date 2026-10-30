@@ -8,10 +8,10 @@
 | 파일 | 내용 |
 |------|------|
 | `index.html` | 페이지 전체 (CSS·JS 인라인). 디자인 토큰은 `:root` 에 있다 |
-| `logo.svg` | 로고 마크 (투명 배경, 달을 올려다보는 찹쌀떡) |
-| `favicon.svg` | 회사 로고(달이 뜬 찹쌀떡)를 남색 둥근 사각형에 올린 파비콘 — `logo.svg` 와 다른 그림 |
+| `logo.svg` | 회사 로고 '달이 뜬 찹쌀떡' 어두운 바탕용 (투명 배경, 크림 떡 + 금색 초승달) — 페이지 안 5곳 |
+| `favicon.svg` | 같은 로고를 남색 둥근 사각형에 올린 파비콘 — 16px 대비 때문에 달만 금색 대신 창으로 뚫음 |
 | `og.png` | 링크 공유 미리보기 이미지 (1200×630) |
-| `img/` | 포트폴리오 스크린샷 (가로 560px JPG) |
+| `img/` | 포트폴리오 스크린샷 (가로 840px JPG — 표시 폭 약 250px 의 3배 화면 대응) |
 | `CNAME` | GitHub Pages 커스텀 도메인 `midnight-mochi.com` (DNS: AWS Route 53, 계정 프로필 `kcal-personal`) |
 
 ## 실행·배포
@@ -25,7 +25,7 @@
 1. **만든 것들**: `index.html` 의 `<!-- 새 프로젝트는 이 아래, 최신순으로 추가한다 -->` 바로 아래에 `<article class="card work reveal">` 를 복사해 넣는다.
    - 대표작만 `work feature`(가로 전체·스크린샷 2장). 나머지는 `work` 카드.
    - 상태 배지: `status live`(운영 중) / `status wip`(진행 중). 완료는 배지 없이 기간만 적는다.
-   - 스크린샷은 `sips -s format jpeg -s formatOptions 82 --resampleWidth 560 원본.png --out img/이름.jpg` 로 줄여 넣는다.
+   - 스크린샷은 `sips -s format jpeg -s formatOptions 85 --resampleWidth 840 원본.png --out img/이름.jpg` 로 줄여 넣는다. `<img>` 의 `width`·`height` 는 비율용 — 높이는 CSS `height: auto` 가 정한다.
 2. **걸어온 길**: `<!-- 새 연혁은 해당 연도 바로 아래 ... -->` 아래 `<ol class="timeline">` 의 해당 연도 `<li class="year">` 바로 다음에 최신순으로 넣는다. 새 해가 되면 `<li class="year">2027</li>` 를 맨 위에 추가.
 3. 사실은 근거가 있는 것만 쓴다: `../docs/미드나잇모찌_회사소개서.docx`, 각 프로젝트 레포의 git log·docs.
 
