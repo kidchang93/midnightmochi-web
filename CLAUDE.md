@@ -28,6 +28,10 @@
    - 스크린샷은 `sips -s format jpeg -s formatOptions 85 --resampleWidth 840 원본.png --out img/이름.jpg` 로 줄여 넣는다. `<img>` 의 `width`·`height` 는 비율용 — 높이는 CSS `height: auto` 가 정한다.
 2. **걸어온 길**: `<!-- 새 연혁은 해당 연도 바로 아래 ... -->` 아래 `<ol class="timeline">` 의 해당 연도 `<li class="year">` 바로 다음에 최신순으로 넣는다. 새 해가 되면 `<li class="year">2027</li>` 를 맨 위에 추가.
 3. 사실은 근거가 있는 것만 쓴다: `../docs/미드나잇모찌_회사소개서.docx`, 각 프로젝트 레포의 git log·docs.
+4. **DAIW 새 버전** — 사용자 상시 요청(2026-11-01): DAIW 앱을 내보낼 때마다 여기도 반영하고 **커밋·push까지** 한다.
+   - 매번: DAIW 카드 `.meta` 의 `최신 앱 0.1.x` 를 새 버전으로 바꾼다.
+   - 사용자에게 보이는 큰 변화(새 DAW 지원, 새 기능 묶음)가 있을 때만 카드 `.work-lead`·`.points`·`.chips`, 하는 일 문구, **걸어온 길**에 넣는다. 고침·작은 개선뿐인 버전은 연혁을 늘리지 않는다.
+   - 근거: `../../logic-pro-control/web/changelog.html` 의 그 버전 항목과 git log.
 
 ## 규칙
 

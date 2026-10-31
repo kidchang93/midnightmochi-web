@@ -362,7 +362,7 @@ footer .brand img { width: 32px; height: 32px; }
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.6 5.6 1.9-5.6 1.9L12 18l-1.9-5.6-5.6-1.9 5.6-1.9z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg></div>
         <h3>자체 서비스</h3>
-        <p>만성질환 식단 관리 앱 케어테이블, 말로 Logic Pro·REAPER를 다루는 AI 음악 엔지니어 DAIW, DAW 프로젝트 협업 서비스 소리허브를 직접 기획·개발하고 운영합니다.</p>
+        <p>만성질환 식단 관리 앱 케어테이블, 말로 Logic Pro·REAPER·Ableton Live를 다루는 AI 음악 엔지니어 DAIW, DAW 프로젝트 협업 서비스 소리허브를 직접 기획·개발하고 운영합니다.</p>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
@@ -437,21 +437,22 @@ footer .brand img { width: 32px; height: 32px; }
       <article class="card work reveal">
         <div class="tags"><span class="tag">자체 서비스</span><span class="status live">운영 중</span></div>
         <h3>DAIW<small>다이브 · AI inside your DAW</small></h3>
-        <p class="meta">AI 음악 엔지니어 · 2026.07 ~ · 2026.10 베타 공개</p>
-        <p class="work-lead">AI에게 말하면 Logic Pro와 REAPER가 움직입니다. 작곡부터 편곡·믹싱·마스터링·내보내기까지 대화로 합니다.</p>
+        <p class="meta">AI 음악 엔지니어 · 2026.07 ~ · 2026.10 베타 공개 · 최신 앱 0.1.17</p>
+        <p class="work-lead">AI에게 말하면 Logic Pro·REAPER·Ableton Live가 움직입니다. 작곡부터 편곡·믹싱·마스터링·내보내기까지 대화로 합니다.</p>
         <ul class="points">
           <li>Claude 커넥터(원격 MCP)와 Mac 메뉴 막대 앱 대화창(Claude·OpenAI·Gemini·로컬 모델 중 선택), DAW를 다루는 도구 50여 개</li>
-          <li>macOS 접근성 API와 가상 컨트롤 서피스(Mackie Control)로 Logic을, Lua 브리지(ReaScript)로 REAPER를 조작하고 바뀐 값을 다시 읽어 확인</li>
+          <li>macOS 접근성 API와 가상 컨트롤 서피스(Mackie Control)로 Logic을, Lua 브리지(ReaScript)로 REAPER를, Python Remote Script(Live Object Model)로 Ableton Live를 조작하고 바뀐 값을 다시 읽어 확인</li>
           <li>"더 따뜻하게", "보컬이 묻혀" 같은 말을 EQ·컴프레서·리버브 조절로 바꾸고, 실제로 바뀐 만큼 다시 재서 확인</li>
           <li>23개 장르·458곡 라우드니스 기준으로 믹스 문제와 고치는 방법을 근거 수치와 함께 제시</li>
           <li>바운스와 라우드니스·대역 측정은 사용자 Mac에서만 하고 음원은 서버로 보내지 않음</li>
           <li>Google 로그인(OAuth 2.1), Paddle 구독 결제 연동, Apple 공증 배포</li>
         </ul>
         <ul class="chips" aria-label="기술 스택">
-          <li>Python</li><li>MCP</li><li>macOS Accessibility</li><li>Core MIDI</li><li>ReaScript (Lua)</li><li>AWS Lightsail</li><li>Paddle</li>
+          <li>Python</li><li>MCP</li><li>macOS Accessibility</li><li>Core MIDI</li><li>ReaScript (Lua)</li><li>Live Object Model</li><li>AWS Lightsail</li><li>Paddle</li>
         </ul>
         <div class="links">
           <a class="btn ghost sm" href="https://daiw.kr" target="_blank" rel="noopener">daiw.kr</a>
+          <a class="btn ghost sm" href="https://daiw.kr/changelog.html" target="_blank" rel="noopener">업데이트 이력</a>
         </div>
       </article>
 
@@ -491,6 +492,7 @@ footer .brand img { width: 32px; height: 32px; }
       <!-- 새 연혁은 해당 연도 바로 아래, 최신순으로 추가한다 -->
       <ol class="timeline reveal">
         <li class="year">2026</li>
+        <li><time datetime="2026-11-01">11.01</time><p><b>DAIW Ableton Live 지원</b><span>Logic Pro·REAPER에 이어 세 번째 DAW · 놓친 연주 되살리기 · 앱 0.1.17</span></p></li>
         <li><time datetime="2026-10-31">10.31</time><p><b>소리허브 출시</b><span>DAW 프로젝트를 위한 깃허브 · 같은 DAW를 쓰는 팀의 협업 · sorihub.kr</span></p></li>
         <li><time datetime="2026-10-31">10.31</time><p><b>DAIW REAPER 지원</b><span>Logic Pro에 이어 두 번째 DAW · 앱 0.1.11~0.1.16</span></p></li>
         <li><time datetime="2026-10-30">10.30</time><p><b>DAIW 앱 대화창 추가</b><span>Claude·OpenAI·Gemini·로컬 모델 중 골라 대화로 DAW 조작</span></p></li>

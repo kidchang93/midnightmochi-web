@@ -25,6 +25,7 @@
 | 상태 배지 | `.tags` 안 | `status live`(운영 중) / `status wip`(진행 중) / 완료는 배지 없음 |
 | 연혁 | `<!-- 새 연혁은 해당 연도 바로 아래 … -->` 아래 해당 `<li class="year">` 다음 | `<li><time datetime="YYYY-MM-DD">MM.DD</time><p><b>…</b><span>…</span></p></li>` |
 | 스크린샷 | `img/` | `sips -s format jpeg -s formatOptions 85 --resampleWidth 840 원본.png --out img/이름.jpg` (케어테이블 원본: `../../kcal/marketing/appstore-screenshots/`) |
+| DAIW 새 버전 (앱 출시마다) | DAIW 카드 `.meta` 끝 `최신 앱 0.1.x` — 큰 변화만 `.points`·연혁에도 | 판단 기준은 `CLAUDE.md` "포트폴리오·연혁 추가" 4 |
 
 ## 브랜드 자산
 
