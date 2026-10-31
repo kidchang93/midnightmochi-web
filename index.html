@@ -362,7 +362,7 @@ footer .brand img { width: 32px; height: 32px; }
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.6 5.6 1.9-5.6 1.9L12 18l-1.9-5.6-5.6-1.9 5.6-1.9z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg></div>
         <h3>자체 서비스</h3>
-        <p>만성질환 식단 관리 앱 케어테이블과, 말로 Logic Pro를 다루는 AI 음악 엔지니어 DAIW를 직접 기획·개발하고 운영합니다.</p>
+        <p>만성질환 식단 관리 앱 케어테이블, 말로 Logic Pro·REAPER를 다루는 AI 음악 엔지니어 DAIW, DAW 프로젝트 협업 서비스 소리허브를 직접 기획·개발하고 운영합니다.</p>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
@@ -417,17 +417,38 @@ footer .brand img { width: 32px; height: 32px; }
 
       <article class="card work reveal">
         <div class="tags"><span class="tag">자체 서비스</span><span class="status live">운영 중</span></div>
+        <h3>소리허브<small>Sorihub · GitHub for DAW projects</small></h3>
+        <p class="meta">DAW 프로젝트 협업·버전 관리 · 2026.10 출시</p>
+        <p class="work-lead">바운스 대신 프로젝트 파일을 주고받습니다. 같은 DAW를 쓰는 팀이 깃허브처럼 한 곡을 여럿이 함께 만들고, DAW가 없는 아티스트·클라이언트는 웹에서 듣고 코멘트합니다.</p>
+        <ul class="points">
+          <li>CLI로 커밋·푸시·풀, 버전마다 미리듣기와 이전 버전 A/B 비교</li>
+          <li>브랜치 → 합치기 요청 → DAW에서 트랙을 가져와 합친 버전으로 기록, 함께 쓰는 main은 잠금으로 동시 편집 방지</li>
+          <li>5GB가 넘는 파일도 조각 전송·이어받기, 주고받는 모든 파일을 sha256으로 검증</li>
+          <li>첫 지원 DAW는 Logic Pro, 웹은 Expo 하나로 iOS·Android까지 확장 예정</li>
+        </ul>
+        <ul class="chips" aria-label="기술 스택">
+          <li>TypeScript</li><li>Node.js</li><li>React Native (Expo)</li><li>SQLite</li><li>Cloudflare R2</li><li>AWS Lightsail</li>
+        </ul>
+        <div class="links">
+          <a class="btn ghost sm" href="https://sorihub.kr" target="_blank" rel="noopener">sorihub.kr</a>
+        </div>
+      </article>
+
+      <article class="card work reveal">
+        <div class="tags"><span class="tag">자체 서비스</span><span class="status live">운영 중</span></div>
         <h3>DAIW<small>다이브 · AI inside your DAW</small></h3>
         <p class="meta">AI 음악 엔지니어 · 2026.07 ~ · 2026.10 베타 공개</p>
-        <p class="work-lead">Claude에게 말하면 Logic Pro가 움직입니다. 작곡부터 편곡·믹싱·마스터링·내보내기까지 대화로 합니다.</p>
+        <p class="work-lead">AI에게 말하면 Logic Pro와 REAPER가 움직입니다. 작곡부터 편곡·믹싱·마스터링·내보내기까지 대화로 합니다.</p>
         <ul class="points">
-          <li>원격 MCP 서버와 Mac 메뉴 막대 앱, DAW를 다루는 도구 50여 개</li>
-          <li>macOS 접근성 API와 가상 컨트롤 서피스(Mackie Control)로 Logic을 조작하고, 바뀐 값을 다시 읽어 확인</li>
+          <li>Claude 커넥터(원격 MCP)와 Mac 메뉴 막대 앱 대화창(Claude·OpenAI·Gemini·로컬 모델 중 선택), DAW를 다루는 도구 50여 개</li>
+          <li>macOS 접근성 API와 가상 컨트롤 서피스(Mackie Control)로 Logic을, Lua 브리지(ReaScript)로 REAPER를 조작하고 바뀐 값을 다시 읽어 확인</li>
+          <li>"더 따뜻하게", "보컬이 묻혀" 같은 말을 EQ·컴프레서·리버브 조절로 바꾸고, 실제로 바뀐 만큼 다시 재서 확인</li>
+          <li>23개 장르·458곡 라우드니스 기준으로 믹스 문제와 고치는 방법을 근거 수치와 함께 제시</li>
           <li>바운스와 라우드니스·대역 측정은 사용자 Mac에서만 하고 음원은 서버로 보내지 않음</li>
           <li>Google 로그인(OAuth 2.1), Paddle 구독 결제 연동, Apple 공증 배포</li>
         </ul>
         <ul class="chips" aria-label="기술 스택">
-          <li>Python</li><li>MCP</li><li>macOS Accessibility</li><li>Core MIDI</li><li>AWS Lightsail</li><li>Paddle</li>
+          <li>Python</li><li>MCP</li><li>macOS Accessibility</li><li>Core MIDI</li><li>ReaScript (Lua)</li><li>AWS Lightsail</li><li>Paddle</li>
         </ul>
         <div class="links">
           <a class="btn ghost sm" href="https://daiw.kr" target="_blank" rel="noopener">daiw.kr</a>
@@ -470,6 +491,9 @@ footer .brand img { width: 32px; height: 32px; }
       <!-- 새 연혁은 해당 연도 바로 아래, 최신순으로 추가한다 -->
       <ol class="timeline reveal">
         <li class="year">2026</li>
+        <li><time datetime="2026-10-31">10.31</time><p><b>소리허브 출시</b><span>DAW 프로젝트를 위한 깃허브 · 같은 DAW를 쓰는 팀의 협업 · sorihub.kr</span></p></li>
+        <li><time datetime="2026-10-31">10.31</time><p><b>DAIW REAPER 지원</b><span>Logic Pro에 이어 두 번째 DAW · 앱 0.1.11~0.1.16</span></p></li>
+        <li><time datetime="2026-10-30">10.30</time><p><b>DAIW 앱 대화창 추가</b><span>Claude·OpenAI·Gemini·로컬 모델 중 골라 대화로 DAW 조작</span></p></li>
         <li><time datetime="2026-10-29">10.29</time><p><b>DAIW 베타 공개</b><span>말로 Logic Pro를 다루는 AI 음악 엔지니어 · daiw.kr</span></p></li>
         <li><time datetime="2026-10-22">10.22</time><p><b>케어테이블 iOS 앱 App Store 출시</b><span>플러스 구독(월간·연간) 함께 승인</span></p></li>
         <li><time datetime="2026-10">10</time><p><b>스펙트럼허브 서비스 개발 용역 수행</b><span>주식회사 액타사이언스 · 2027.01 완료 예정</span></p></li>
@@ -495,7 +519,7 @@ footer .brand img { width: 32px; height: 32px; }
       <div class="card reveal">
         <ul class="rows">
           <li><span class="k">경력</span><span class="v"><span>가이던스 <small>심리·교육검사 플랫폼 백엔드 · 2025.11 ~</small></span><span>천재교육 서비스개발팀 <small>백엔드 · 2024.05 ~ 2025.06</small></span></span></li>
-          <li><span class="k">직접 만든 것</span><span class="v"><span>케어테이블</span><span>DAIW <small>AI 음악 엔지니어</small></span><span>db-studio <small>데스크톱 DB 클라이언트</small></span><span>dispatch <small>현장 인력 배차 운영 도구</small></span></span></li>
+          <li><span class="k">직접 만든 것</span><span class="v"><span>케어테이블</span><span>DAIW <small>AI 음악 엔지니어</small></span><span>소리허브 <small>DAW 프로젝트 협업</small></span><span>db-studio <small>데스크톱 DB 클라이언트</small></span><span>dispatch <small>현장 인력 배차 운영 도구</small></span></span></li>
           <li style="border:0;padding-bottom:0"><span class="k">기술</span>
             <ul class="chips v" aria-label="주요 기술">
               <li>Java</li><li>Kotlin</li><li>Spring Boot</li><li>Python · FastAPI</li><li>TypeScript</li><li>React</li><li>React Native (Expo)</li><li>PostgreSQL</li><li>MySQL</li><li>AWS</li><li>Terraform</li><li>Docker</li>
